@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
  */
 public class PropertyLoader {
 
-    private static final boolean THROW_ON_LOAD_FAILURE = true;
     private static final boolean LOAD_AS_RESOURCE_BUNDLE = false;
     private static final String SUFFIX = ".properties";
 

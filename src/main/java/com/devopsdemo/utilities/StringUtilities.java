@@ -9,9 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 
 /**
  * A utility class for string manipulations and conversions.
@@ -26,8 +23,6 @@ public class StringUtilities {
 	private static final String DATE_TYPE = "date";
 	private static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 	private static final String STRING_TYPE = "string";
-
-	private static final Logger LOG = LoggerFactory.getLogger(StringUtilities.class);
 
 	private static final HashMap<String, Class<?>> PRIMITIVE_NAME_TYPE_MAP = new HashMap<>();
 

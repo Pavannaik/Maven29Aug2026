@@ -2,8 +2,6 @@ package com.devopsdemo.tutorial.addressbook.backend;
 
 import java.time.LocalDate;
 import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Backend implementation for the address book application, with "detached entities"
@@ -49,7 +47,7 @@ public class ContactService {
     public synchronized List<Contact> findAll(String stringFilter) {
         var filteredContacts = new ArrayList<Contact>();
         for (var contact : contacts.values()) {
-            boolean passesFilter = (stringFilter == null || stringFilter.isEmpty())
+            boolean passesFilter = stringFilter == null || stringFilter.isEmpty()
                     || contact.toString().toLowerCase().contains(stringFilter.toLowerCase());
             if (passesFilter) {
                 filteredContacts.add(contact);
