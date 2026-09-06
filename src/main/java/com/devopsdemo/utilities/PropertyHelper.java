@@ -1,7 +1,6 @@
 package com.devopsdemo.utilities;
 
 import java.util.HashMap;
-import java.util.Properties;
 
 /**
  * Helper Class to load Properties from a property file to be passed to caller for execution.
